@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 25px;
+            height: 25px;
+            border: 1px aquamarine solid;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1"></div>
+
+<div id="div2"></div>
+
+<div id="div3"></div>
+
+<button id="btn">Change Colors</button>
+
+<script>
+    function setcolor(d){
+        const divs = document.querySelectorAll("div")
+        divs[0].style.backgroundColor="red"
+        divs[1].style.backgroundColor="green"
+        divs[2].style.backgroundColor="blue"
+    }
+    const btn = document.getElementById("btn")
+    btn.onclick = setcolor
+
+</script>
+
+</body>
+</html>
